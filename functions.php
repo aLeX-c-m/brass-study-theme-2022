@@ -12,6 +12,19 @@ function brass_register_scripts(){
 
 add_action('wp_enqueue_scripts', 'brass_register_scripts');
 
+function brass_register_menus(){
+    
+    $locations = array(
+        'Primary' => "Top Menu",
+        'FooterMenus' => 'Footer Menu Links'
+    )
+    
+   // register_nav_menus($locations)
+}
+
+add_action('init', 'brass_register_menus');
+
+
 
 ?>
 
