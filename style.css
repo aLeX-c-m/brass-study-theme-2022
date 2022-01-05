@@ -103,7 +103,7 @@ body {
     overflow: auto;
     margin: auto;
  }
- .sub-menu {
+ .dropdown-menu {
     display: none;
     position: absolute;
     margin: auto;
@@ -130,7 +130,7 @@ body {
    transition: all 0.7s linear;
 }
 
- .nav-link:hover .sub-menu {
+ .nav-link:hover .dropdown-menu {
     display: block;
     color: white;
     background: #b10000;
@@ -584,7 +584,7 @@ body {
        margin: auto;
     }
  
-    input[type="checkbox"]:checked ~ nav .sub-menu {
+    input[type="checkbox"]:checked ~ nav .dropdown-menu {
        /*width: fit-content;*/
        position: relative;
        background-color: rgba(0, 0, 0, 0);
@@ -733,7 +733,7 @@ body {
        cursor: pointer;
     }
  
-    .nav-link:hover .sub-menu {
+    .nav-link:hover .dropdown-menu {
        display: none;
     }
  
@@ -752,7 +752,7 @@ body {
        position: relative;
     }
  
-    .sub-menu {
+    .dropdown-menu {
        display: block;
        color: black;
        font-weight: bolder;
@@ -779,7 +779,7 @@ body {
        grid-gap: 15px;	
     }
  
-    .sub-menu {
+    .dropdown-menu {
         display: none;
     }
  
