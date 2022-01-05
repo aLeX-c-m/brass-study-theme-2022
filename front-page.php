@@ -14,9 +14,9 @@ get_header();
 		</p> 
 	</div>
 	<div class="icon-triptych">
-		<button alt='view patient statistics' class="icon-link" href="https://www.brassstudy.org/about-brass/patient-statistics"><img class="icon-img" src="icons/graph-icon.png"><div class="icon-txt">view patient statistics</div></button>
-		<button alt='more about BRASS' class="icon-link" href="https://www.brassstudy.org/about-brass/overview"><img class="icon-img" src="icons/study-icon.png"><div class="icon-txt">more about brass</div></button>
-		<button alt='more about RA' class="icon-link" href="https://www.brassstudy.org/about-ra/disease-statistics"><img class="icon-img" src="icons/arthritis-icon.png"><div class="icon-txt">about rhematoid arthritis</div></div>
+		<button alt='view patient statistics' class="icon-link" href="https://www.brassstudy.org/about-brass/patient-statistics"><img class="icon-img" src="https://www.brassstudy.org/wp-content/uploads/2022/01/graph-icon.png"><div class="icon-txt">view patient statistics</div></button>
+		<button alt='more about BRASS' class="icon-link" href="https://www.brassstudy.org/about-brass/overview"><img class="icon-img" src="https://www.brassstudy.org/wp-content/uploads/2022/01/study-icon.png"><div class="icon-txt">more about brass</div></button>
+		<button alt='more about RA' class="icon-link" href="https://www.brassstudy.org/about-ra/disease-statistics"><img class="icon-img" src="https://www.brassstudy.org/wp-content/uploads/2022/01/arthritis-icon.png"><div class="icon-txt">about rhematoid arthritis</div></div>
 	</div>
 </div>
     

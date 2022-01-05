@@ -5,9 +5,7 @@ Tags: Brassstudy
 Author: AM
 */
 
-html {
-   top: 0;
-}
+
 
 body {
     font-family: source-sans-pro !important;
@@ -49,6 +47,7 @@ body {
     align-items: flex-end;
     border-bottom: 3px solid black;
     background: rgb(255, 255, 255);
+    margin-top: -40px;
  }
  
  .main-logo {
@@ -372,7 +371,7 @@ body {
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    margin-top: -100px;
+    margin-top: -70px;
  }
  
  #c1 {
