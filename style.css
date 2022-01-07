@@ -8,418 +8,433 @@ Author: AM
 
 
 body {
-    font-family: source-sans-pro !important;
-    margin: 0px;
-    font-style: normal;
-    font-weight: 200;
-    min-width: 200px;
- }
- 
- header {
-    min-height: 100px;
-    max-height: 15%;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    text-align: end;
-    display: flex;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
-    position: sticky;
- }
- 
- .checkbox {
-     visibility: hidden;
- }
- 
- .menu-icon {
+   font-family: source-sans-pro !important;
+   margin: 0px;
+   font-style: normal;
+   font-weight: 500;
+   min-width: 200px;
+   letter-spacing: 2px;
+}
+
+a {
+   color: rgb(54, 54, 54);
+}
+
+header {
+   min-height: 100px;
+   max-height: 15%;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   text-align: end;
+   display: flex;
+   border-bottom: 3px solid rgba(0, 0, 0, 0);
+   position: sticky;
+   margin-top: -40px;
+}
+
+.checkbox {
     visibility: hidden;
- }
- 
- nav {
-    display: flex;
-    min-height: 100px;
-    width: 100%;
-    overflow: visible;
-    position: absolute;
-    max-height: 15%;
-    justify-content: space-between;
-    z-index: 1;
-    align-items: flex-end;
-    border-bottom: 3px solid black;
-    background: rgb(255, 255, 255);
-    margin-top: -40px;
- }
- 
- .main-logo {
-    font-weight:900;
-    font-size: 25px;
-    text-align: center;
-    display: inline-block;
-    width: 10%;
-    position: relative;
-    color: black;
-    margin: auto;
-    padding: 12px;
-    border: 3px solid black;
-    margin-left: 2%;
-    max-height: 43px;
-    min-width: 100px;
-    max-width: 109px;
- }
- 
- .logo-RA {
-    color: #b10000;
- }
-
- .menu-items {
-     list-style: none;
-     float: right;
-     margin-right: 20px;
-     margin-bottom: 25px;
- }
- 
- .nav-link {
-    position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    padding-bottom: 6px;
-    font-size: 18px;
-    float: left;
-    font-size: 16px;
-    text-align: left;
-    margin-right: 25px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    transition: all 0.3s linear;
-    display: block;
-    margin: auto;
-    padding-right: 14px;
-    padding-top: 2px;
- }
- 
- .nav-tag {
-    text-decoration: none;
-    color: black;
-    font-weight: 900;
-    overflow: auto;
-    margin: auto;
- }
- .dropdown-content {
-    display: none;
-    position: absolute;
-    margin: auto;
-    margin-top: 7px;
-    padding-top: 6px;
-    padding-bottom: 16px;
-    padding-left: 17px;
-    padding-right: 17px;
-    background-color: #b10000;
-    width: fit-content;
-    z-index: 1;
- }
- 
- .drop-link {
-    padding-top: 8px;
-    text-decoration: none;
-    font-weight: bolder;
-    display: block;
-    width: 65%;
- }
-
- .menu-items:hover .nav-link {
-   border-bottom: 1px solid black;
-   transition: all 0.7s linear;
 }
 
- .nav-link:hover .dropdown-content {
-    display: block;
-    color: white;
-    background: #b10000;
- }
- 
- .drop-link {
-    color: white;
-    font-weight: 900;
- }
- 
- .nav-link:hover .drop-link:hover{
-    text-shadow: 0 0 2px white;
- }
- 
- .nav-link:hover {
-    text-shadow: 0 0 .5px black;
- }
- 
- .main-content {
-    font-family: source-sans-pro;
-    background-repeat: no-repeat;
-    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0036_BWH_Buildings_100815_3528.jpg');
-    background-size: 200%;
-    margin: 0px;
-    font-style: normal;
-    font-weight: 200;
-    min-width: 200px;
-    top:0;
-    display: block;
-    overflow: auto;
- }
- 
- .main-overlay-div {
-    align-self: flex-start;
-    color: white;
-    margin: 0;
-    padding-top: 8vh;
-    padding-bottom: 6vh;
-    margin-right: 70%;
-    display: inline-block;
-    background-color: rgba(158, 9, 9, 0.842);
- }
- 
- .main-overlay-header {
-    font-size: 3.4vw;
-    text-align: center;
-    margin: auto;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    letter-spacing: 4px;
- }
- 
- .main-overlay-text {
-    text-align: left;
-    align-content: center;
-    letter-spacing: 2px;
-    font-size-adjust: auto;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 30px;
-    padding-top:15px;
-    text-align: left;
-    justify-content: space-around;	
-    margin: 0;
- }
- 
- .icon-triptych {
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-    margin: 0;
-    padding: 10px;
-    border: 3px solid black;
-    background-color: white;
-    border-left: none;
-    border-right: none;
- }
- 
- .icon-link {
-    display: flex;
-    background-color: white;
-    border: 3px solid black;
-    cursor: pointer;
- }
- 
- .icon-img {
-    height: 7vw;
-    width: 7vw;
-    margin: 10px;;
-    display: block;
-    border: 3px solid black;
- }
- 
- .icon-txt {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 10px;
-    display: flex;
-    width: 10vw;
-    flex-direction: column;
- }
- 
- .footer-banner {
-    background-color:#970303;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    margin: 0px;
-    background-repeat: repeat;
-    border-top: 2px solid black;
- }
- 
- .contact-button {
-    width: 200px;
-    margin-top: 2%;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    padding: 20px 10px 20px 10px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 0px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
-    transition: all 0.3s linear;
- }
- 
- .contact-button:hover {
-     background-color: white;
-     color:black;
-     cursor: pointer;
-     border: 3px solid black;
- }
- 
- .footer-menu {
-   color: white;
+.menu-icon {
+   visibility: hidden;
+}
+
+nav {
+   display: flex;
+   min-height: 100px;
+   width: 100%;
+   overflow: visible;
+   position: absolute;
+   max-height: 15%;
+   justify-content: space-between;
+   z-index: 1;
+   align-items: flex-end;
+   border-bottom: 3px solid black;
+   background: rgb(255, 255, 255);
+   
+}
+
+.main-logo {
+   font-weight:900;
+   font-size: 25px;
    text-align: center;
-   letter-spacing: 3px;
-   margin-top: 20px;
- }
- 
- .footer-link {
-   color: white;
+   display: inline-block;
+   width: 10%;
+   position: relative;
+   color: black;
+   margin: auto;
+   padding: 12px;
+   border: 3px solid black;
+   margin-left: 2%;
+   max-height: 43px;
+   min-width: 120px;
+   max-width: 109px;
+   letter-spacing: 5px;
+}
+
+.logo-RA {
+   color: #b10000;
+}
+
+.menu-items {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.nav-link {
+   position: relative;
+   border-bottom: 1px solid rgba(0, 0, 0, 0);
+   padding-bottom: 6px;
+   font-size: 18px;
+   float: left;
+   font-size: 16px;
+   text-align: left;
+   margin-right: 25px;
+   letter-spacing: 2px;
+   font-weight: bold;
+   transition: all 0.3s linear;
+   display: block;
+   margin: auto;
+   padding-right: 14px;
+   padding-top: 2px;
+}
+
+.nav-tag {
    text-decoration: none;
- }
- 
- .copyright {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    border-top-width: 2px;
-    font-size: 14px;
-    background-color: #970303;
- }
- 
- .bios-contain {
-    width: 100vw;
-    height: 100vw;
-    overflow: auto;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 20%;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0019_BWH_Buildings_100615_1734.jpg');
- }
-
- .bios-grid-background-main {
-    background: rgba(255, 255, 255, 0.87);
-    width: 100%;
-    padding: 20%;
-    padding-top: 10%;
-    border-top: 2px solid black;
-    margin-bottom: 0;
+   color: black;
+   font-weight: 900;
+   overflow: auto;
+   margin: auto;
 }
-.investigator-title {
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 5%;
- }
- 
- .investigator-grid {
-    display: grid;
-    max-width: inherit;
-    margin: auto;
-    grid-gap: 0;	
-    grid-template-columns: repeat( auto-fit, minmax(180px, 1fr) );
-    max-width: 845px;
-    grid-gap: 5%;
- }
- 
- .investigator-span {
-    display: grid;
-    margin: auto;
-    align-content: center;
-    font-size: 1.4em;
-    padding: 12px;
-    width: 250px;
-    height: 350px;
-    border-radius: 5px;
-    border: 2px solid black;
-    background: white;   
- }
+.dropdown-content {
+   display: none;
+   position: absolute;
+   margin: auto;
+   margin-top: 7px;
+   padding-top: 6px;
+   padding-bottom: 16px;
+   padding-left: 17px;
+   padding-right: 17px;
+   background-color: #b10000;
+   width: fit-content;
+   z-index: 1;
+}
 
- .investigator-image {
-    margin: auto;
-    padding: 10px;
- }
- 
- .investigator-info {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
- }
- 
- .content-page-container {
-    width: 100vw;
-    height: 100vw;
-    overflow: auto;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 5vh;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    margin-top: -70px;
- }
- 
- #c1 {
-   background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0019_BWH_Buildings_100615_1734.jpg');
+.drop-link {
+   padding-top: 8px;
+   text-decoration: none;
+   font-weight: bolder;
+   display: block;
+   width: 65%;
+}
+
+.menu-items:hover .nav-link {
+  border-bottom: 1px solid black;
+  transition: all 0.7s linear;
+}
+
+.nav-link:hover .dropdown-content {
+   display: block;
+   color: white;
+   background: #b10000;
+}
+
+.drop-link {
+   color: white;
+   font-weight: 900;
+}
+
+.nav-link:hover .drop-link:hover{
+   text-shadow: 0 0 2px white;
+}
+
+.nav-link:hover {
+   text-shadow: 0 0 .5px black;
+}
+
+.main-content {
+   font-family: source-sans-pro;
    background-repeat: no-repeat;
+   background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0036_BWH_Buildings_100815_3528.jpg');
+   background-size: 200%;
+   margin: 0px;
+   font-style: normal;
+   font-weight: 200;
+   min-width: 200px;
+   top:0;
+   display: block;
+   overflow: auto;
 }
- 
- 
- #c2 {
-    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0007_BWH_Buildings_100615_0566.jpg');
-    background-repeat: no-repeat;
- }
- 
- #c3 {
-    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0092_BWH_120715_20753_crop.jpg');  
-    background-repeat: no-repeat;
+
+.main-overlay-div {
+   align-self: flex-start;
+   color: white;
+   margin: 0;
+   padding-top: 8vh;
+   padding-bottom: 6vh;
+   margin-right: 70%;
+   display: inline-block;
+   background-color: rgba(158, 9, 9, 0.842);
 }
- 
- #c4 {
-    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0020_BWH_Buildings_100615_1764.jpg');   
-    background-repeat: no-repeat;
- }
- 
- .content-page-block {
-    padding: 18%;
-    padding-top: 5%;
-    padding-bottom: 3%;
-    width:100vw;
-    line-height: 20px;
-    font-size: 18px;
+
+.main-overlay-header {
+   font-size: 3.4vw;
+   text-align: center;
+   margin: auto;
+   margin-top: 0;
+   padding-top: 0;
+   margin-bottom: 0;
+   letter-spacing: 4px;
+}
+
+.main-overlay-text {
+   text-align: left;
+   align-content: center;
+   letter-spacing: 2px;
+   font-size-adjust: auto;
+   font-size: 14px;
+   font-weight: 400;
+   padding: 30px;
+   padding-top:15px;
+   text-align: left;
+   justify-content: space-around;	
+   margin: 0;
+}
+
+.icon-triptych {
+   align-content: center;
+   justify-content: space-evenly;
+   align-items: center;
+   display: flex;
+   margin: 0;
+   padding: 10px;
+   border: 3px solid black;
+   background-color: white;
+   border-left: none;
+   border-right: none;
+}
+
+.icon-link {
+   display: flex;
+   background-color: white;
+   border: 3px solid black;
+   cursor: pointer;
+}
+
+.icon-img {
+   height: 7vw;
+   width: 7vw;
+   margin: 10px;;
+   display: block;
+   border: 3px solid black;
+}
+
+.icon-txt {
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   margin: 10px;
+   display: flex;
+   width: 10vw;
+   flex-direction: column;
+}
+
+.footer-banner {
+   background-color:#970303;
+   padding-top: 20px;
+   padding-bottom: 0px;
+   margin: 0px;
+   background-repeat: repeat;
+   border-top: 2px solid black;
+}
+
+.contact-button {
+   width: 200px;
+   margin-top: 2%;
+   margin-right: auto;
+   margin-bottom: auto;
+   margin-left: auto;
+   padding: 20px 10px 20px 10px;
+   text-align: center;
+   vertical-align: middle;
+   border-radius: 0px;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 2px;
+   border: 3px solid #FFFFFF;
+   color: #FFFFFF;
+   transition: all 0.3s linear;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.footer-menu {
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright {
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   color: white;
+   text-transform: uppercase;
+   font-weight: lighter;
+   letter-spacing: 2px;
+   border-top-width: 2px;
+   font-size: 14px;
+   background-color: #970303;
+}
+
+
+.investigator-grid {
+   display: grid;
+   margin: auto;	
+   grid-template-columns: repeat( auto-fit, minmax(180px, 1fr) );
+   max-width: 845px;
+   grid-gap: 5%;
+   height: 100%;
+   grid-template-rows: 28%;
+   padding: 30px;
+}
+
+.investigator-span {
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   align-content: space-between;
+   align-content: center;
+   font-size: 1.4em;
+   width: 250px;
+   height: 100%;
+   border-radius: 5px;
+   border: 2px solid black;
+   background: white;   
+}
+
+.investigator-image {
+   margin: auto;
+   margin-bottom: 10px;
+   margin-top: 20px;
+}
+
+.investigator-info {
+   text-align: center;
+   color: black;
+   line-height: normal;
+   text-decoration: none;
+   font-size: 21px;
+   font-weight: bolder;
+}
+
+.investigator-sub-info {
+   text-align: center;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   color: black;
+   margin-top: 0px;
+   margin-bottom: 5%;
+   line-height: normal;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: bolder;
+   padding: 15px;
+}
+
+
+.content-page-container {
+   width: 100vw;
+   height: 80%;
+   overflow: auto;
+   align-items: center;
+   justify-items: center;
+   text-align: center;
+   padding-top: 5vh;
+   display: inline-grid;
+   grid-template-columns: 1fr;
+   grid-gap: 10px;
+   margin-top: -70px;
+}
+
+#c1 {
+  background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0019_BWH_Buildings_100615_1734.jpg');
+}
+
+
+#c2 {
+   background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0007_BWH_Buildings_100615_0566.jpg');
+}
+
+#c3 {
+   background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0092_BWH_120715_20753_crop.jpg');  
+}
+
+#c4 {
+   background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0020_BWH_Buildings_100615_1764.jpg');   
+}
+
+.content-page-block {
+   padding-top: 450px;
+   width: 100vw;
+   line-height: 20px;
+   height: 100%;
+   font-size: 18px;
+   align-content: space-between;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.content-page-block-text {
+    background: white;
+    padding: 5%;
+    margin: auto;
     margin-top: 40px;
-    align-content: space-between;
+    border: 3px solid black;
+    text-align: justify;
     align-items: center;
+    width: 70%;
+    align-content: center;
+ }
+
+ #content-page-block-text-bio{
+   background: white;
+   padding: 5%;
+   margin: auto;
+   margin-top: 40px;
+   border: 3px solid black;
+   text-align: justify;
+   align-items: center;
+   width: 75%;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 10%;
+   min-width: 900px;
+}
+
+#content-page-block-text-bio p {
+   font-family: source-sans-pro !important;
+   font-weight: 900;
  }
  
- .content-page-block-text {
-     background: white;
-     padding: 5%;
-     margin: 20%;
-     margin-top: 10%;
-     border: 3px solid black;
-     text-align: justify;
-     align-items: center;
-     min-width: 450px;
-     align-content: center;
-  }
- 
-  .content-page-block-text h2 {
+  #content-page-block-text-bio h2 {
     padding-bottom: 25px;
     padding-top: 10px;
     text-align: left;
@@ -427,35 +442,56 @@ body {
     margin-bottom: 15px;
   }
  
-  .content-page-block-text h1 {
+  #content-page-block-text-bio h1 {
     padding: 35px;
     padding-bottom: 45px;
     text-align: center;
     border-bottom: 2px solid black;
     margin: auto;
     margin-bottom: 30px;
+    width: 70%;
+   
+ }
+
+
+ .content-page-block-text p {
+  font-family: source-sans-pro !important;
+  font-weight: 900;
+}
+
+ .content-page-block-text h2 {
+   padding-bottom: 25px;
+   padding-top: 10px;
+   text-align: left;
+   text-decoration: underline;
+   margin-bottom: 15px;
+ }
+
+ .content-page-block-text h1 {
+   padding: 35px;
+   padding-bottom: 45px;
+   text-align: center;
+   border-bottom: 2px solid black;
+   margin: auto;
+   margin-bottom: 30px;
+}
+
+ img {
+    background-color: white;
  }
  
-  img {
-     background-color: white;
-  }
-  
 .horizontal-list {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
- }
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+}
 
- .horizontal-list-item {
-    list-style: none;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
- }
- 
-
-
- 
+.horizontal-list-item {
+   list-style: none;
+   padding: 10px;
+   text-align: center;
+   margin: auto;
+}
 
 
 
@@ -465,354 +501,357 @@ body {
 
 
 
- @media (max-width : 815px){
- 
- 
-    .icon-link {
-       border: 0px solid black;
+
+
+
+
+@media (max-width : 815px){
+
+
+   .icon-link {
+      border: 0px solid black;
+   }
+
+   .investigator-grid {
+      display: grid;
+      max-width: inherit;
+      margin: auto;
+      grid-gap: 15px;	
+   }
+
+   .drop-link:hover {
+      color: #ca0202;
+   }
+   .checkbox {
+      visibility: visible;
+      background-color: rgba(255, 255, 255, 0);
+      cursor: default;
+      appearance: auto;
+      box-sizing: border-box;
+      padding: initial;
+      border: initial;
+      opacity: 0;
+      z-index:3;
+      position: relative;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: black;
+      font-size: 6vw;
+      width: 100px;
+      margin-left: auto;
+      display: block;
+      height: 72px;
+   }
+
+   .menu-icon {
+      visibility: visible;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: black;
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      font-size: 6vw;
+      width: 100px;
+      height: 80px;
+      margin-left: auto;
+      -webkit-transition: .4s;
+      transition: .4s;
+      display: block;
+      z-index: 2;
+      padding-top: 0px;
     }
- 
-    .investigator-grid {
-       display: grid;
-       max-width: inherit;
-       margin: auto;
-       grid-gap: 15px;	
+
+   .dropdown {
+      min-width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: visible;
+   }
+
+   .menu-items {
+      list-style: none;
+      position: relative;
+      height: 100vw;
+      margin: 0;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+      justify-items: center;
+      float: unset;
+      flex-direction: column;
+      width: 100%;
+      overflow: auto;
+      padding-bottom: 300px;
+      padding-left: 0;
+      display: none;
+   }
+
+   .nav-link {
+      position: relative;
+      display: block;
+      padding: 20px;
+      font-size: 14px;
+      text-align: left;
+      letter-spacing: 2px;
+      font-weight: bold;
+      transition: all 0.3s linear;
+      display: block;
+      margin: auto;
+      margin-top: 8%;
+      font-size: 1em;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      border-bottom: 0px;
+   }
+
+
+   .nav-tag {
+      text-decoration: none;
+      color: #b10000;
+      font-weight: 900;
+      overflow: auto;
+      margin: auto;
+   }
+
+   input[type="checkbox"]:checked ~ nav .dropdown-content {
+      /*width: fit-content;*/
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      display: block;
+      color: black;
+      font-weight: bolder;
+      margin: auto;
+      margin-top: 7px;
+      z-index: 2;
+      text-align: center;
+      padding: 0px;
+   }
+
+   .drop-link {
+      padding-top: 10px;
+      text-decoration: none;
+      font-weight: bolder;
+      display: block;
+      width: 75%;
+      overflow: visible;
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+   }
+
+   input[type="checkbox"]:checked ~ nav {
+      display: flex;
+      position: absolute;
+      width: 100vw;
+      background-color: white;
+      z-index: 1;
+      overflow: auto;
+      max-height: 100vh;
+      align-items: flex-start;
+   } 
+
+
+   input[type="checkbox"]:checked ~ nav .dropdown {
+      min-width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: visible;
+   }
+
+
+   input[type="checkbox"]:checked ~ nav .menu-items {
+      list-style: none;
+      position: absolute;
+      top: 10%;
+      height: 210%;
+      margin: auto;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+      justify-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      overflow: auto;
+      padding-bottom: 100px;
+      padding-left: 0;
+      z-index: 4;
+   }
+
+   input[type="checkbox"]:checked ~ nav .nav-link {
+      position: relative;
+      display: block;
+      padding: 0px;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 2px;
+      font-weight: bold;
+      transition: all 0.3s linear;
+      display: block;
+      margin: 4%;
+      font-size: 1em;
+      align-content: center;
+   }
+
+   input[type="checkbox"]:checked ~ nav .nav-tag {
+      border-bottom: 1px solid black;
+      color: black;
+      font-weight: 900;
+      overflow: auto;
+      margin: auto;
+      text-align: center;
+      align-self: center;
+   }
+
+   input[type="checkbox"]:checked ~ nav .drop-link {
+      color: black;
+      padding-top: 10px;
+      padding-bottom: 2px;
+      text-decoration: none;
+      font-weight: bolder;
+      display: block;
+      width: 100%;
     }
- 
-    .drop-link:hover {
-       color: #ca0202;
+
+    input[type="checkbox"]:checked ~ nav .drop-link:hover {
+      color: #ca0202;
+      text-shadow: 0 0 1px #ca0202;
     }
-    .checkbox {
-       visibility: visible;
-       background-color: rgba(255, 255, 255, 0);
-       cursor: default;
-       appearance: auto;
-       box-sizing: border-box;
-       padding: initial;
-       border: initial;
-       opacity: 0;
-       z-index:3;
-       position: relative;
-       cursor: pointer;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       color: black;
-       font-size: 6vw;
-       width: 100px;
-       margin-left: auto;
-       display: block;
-       height: 72px;
+
+   /* input[type="checkbox"]:checked ~ nav .nav-tag:hover {
+      color: #ca0202;
+      text-shadow: 0 0 1px #ca0202;
+      border-bottom: 1px solid #ca0202;
+    } */
+
+   input[type="checkbox"]:checked + .menu-icon {
+      content: "✕";
+   }
+
+   input[type="checkbox"]:checked + .menu-icon:after {
+      content: "✕";
     }
- 
-    .menu-icon {
-       visibility: visible;
-       position: absolute;
-       cursor: pointer;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       color: black;
-       background-color: rgba(255, 255, 255, 0);
-       border: none;
-       font-size: 6vw;
-       width: 100px;
-       height: 80px;
-       margin-left: auto;
-       -webkit-transition: .4s;
-       transition: .4s;
-       display: block;
-       z-index: 2;
-       padding-top: 0px;
-     }
- 
-    .dropdown {
-       min-width: 100vw;
-       min-height: 100vh;
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       overflow: visible;
-    }
- 
-    .menu-items {
-       list-style: none;
-       position: relative;
-       height: 100vw;
-       margin: 0;
-       align-content: center;
-       justify-content: flex-start;
-       align-items: center;
-       justify-items: center;
-       float: unset;
-       flex-direction: column;
-       width: 100%;
-       overflow: auto;
-       padding-bottom: 300px;
-       padding-left: 0;
+
+   input[type="checkbox"] + .menu-icon:before {
+      content: "☰";
+   }
+
+   input[type="checkbox"]:checked + .menu-icon:before {
+      display:none;
+   }
+   
+   .main-overlay-div {
+      margin-right: 57.5%;
+      margin-top: -28px;
+   }
+
+   .icon-txt {
+      display: block;
+      width: 52%;
+      margin-right: 0;
+      padding-right: 0;
+      cursor: pointer;
+      font-size: 2vw;		
+   }
+
+   .icon-img {
+      margin-right: 0;
+      padding-right: 0;
+      cursor: pointer;
+   }
+
+   .nav-link:hover .dropdown-content {
+      display: none;
+   }
+
+   input[type="checkbox"]:checked ~ nav .main-logo {
+      font-weight:900;
+      text-align: center;
+      display: inline-block;
+      padding: 12px;
+      position: relative;
+      margin-top: 1%;
+   }
+
+   input[type="checkbox"]:checked ~ nav .home-link {
+      height:80%;
+      display: inline-block;
+      position: relative;
+   }
+
+   .dropdown-content {
+      display: block;
+      color: black;
+      font-weight: bolder;
+      margin-top: 7px;
+      z-index: 2;
+      text-align: center;
+   }
+
+   .icon-triptych {
+      margin: 0;
+      border-left: none;
+      border-right: none;
+      justify-content: space-evenly;
+   }
+
+}
+
+@media (max-width : 600px ){
+
+   .investigator-grid {
+      display: grid;
+      max-width: inherit;
+      margin: auto;
+      grid-gap: 15px;	
+   }
+
+   .dropdown-content {
        display: none;
-    }
- 
-    .nav-link {
-       position: relative;
-       display: block;
-       padding: 20px;
-       font-size: 14px;
-       text-align: left;
-       letter-spacing: 2px;
-       font-weight: bold;
-       transition: all 0.3s linear;
-       display: block;
-       margin: auto;
-       margin-top: 8%;
-       font-size: 1em;
-       align-content: center;
-       align-items: center;
-       justify-content: center;
-       justify-items: center;
-       border-bottom: 0px;
-    }
- 
- 
-    .nav-tag {
-       text-decoration: none;
-       color: #b10000;
-       font-weight: 900;
-       overflow: auto;
-       margin: auto;
-    }
- 
-    input[type="checkbox"]:checked ~ nav .dropdown-content {
-       /*width: fit-content;*/
-       position: relative;
-       background-color: rgba(0, 0, 0, 0);
-       display: block;
-       color: black;
-       font-weight: bolder;
-       margin: auto;
-       margin-top: 7px;
-       z-index: 2;
-       text-align: center;
-       padding: 0px;
-    }
- 
-    .drop-link {
-       padding-top: 10px;
-       text-decoration: none;
-       font-weight: bolder;
-       display: block;
-       width: 75%;
-       overflow: visible;
-       justify-content: center;
-       align-content: center;
-       margin: auto;
-    }
- 
-    input[type="checkbox"]:checked ~ nav {
-       display: flex;
-       position: absolute;
-       width: 100vw;
-       background-color: white;
-       z-index: 1;
-       overflow: auto;
-       max-height: 100vh;
-       align-items: flex-start;
-    } 
- 
- 
-    input[type="checkbox"]:checked ~ nav .dropdown {
-       min-width: 100vw;
-       min-height: 100vh;
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       overflow: visible;
-    }
- 
- 
-    input[type="checkbox"]:checked ~ nav .menu-items {
-       list-style: none;
-       position: absolute;
-       top: 10%;
-       height: 210%;
-       margin: auto;
-       align-content: center;
-       justify-content: flex-start;
-       align-items: center;
-       justify-items: center;
-       display: flex;
-       flex-direction: column;
-       width: 60%;
-       overflow: auto;
-       padding-bottom: 100px;
-       padding-left: 0;
-       z-index: 4;
-    }
- 
-    input[type="checkbox"]:checked ~ nav .nav-link {
-       position: relative;
-       display: block;
-       padding: 0px;
-       font-size: 14px;
-       text-align: center;
-       letter-spacing: 2px;
-       font-weight: bold;
-       transition: all 0.3s linear;
-       display: block;
-       margin: 4%;
-       font-size: 1em;
-       align-content: center;
-    }
- 
-    input[type="checkbox"]:checked ~ nav .nav-tag {
-       border-bottom: 1px solid black;
-       color: black;
-       font-weight: 900;
-       overflow: auto;
-       margin: auto;
-       text-align: center;
-       align-self: center;
-    }
- 
-    input[type="checkbox"]:checked ~ nav .drop-link {
-       color: black;
-       padding-top: 10px;
-       padding-bottom: 2px;
-       text-decoration: none;
-       font-weight: bolder;
-       display: block;
-       width: 100%;
-     }
- 
-     input[type="checkbox"]:checked ~ nav .drop-link:hover {
-       color: #ca0202;
-       text-shadow: 0 0 1px #ca0202;
-     }
- 
-    /* input[type="checkbox"]:checked ~ nav .nav-tag:hover {
-       color: #ca0202;
-       text-shadow: 0 0 1px #ca0202;
-       border-bottom: 1px solid #ca0202;
-     } */
- 
-    input[type="checkbox"]:checked + .menu-icon {
-       content: "✕";
-    }
- 
-    input[type="checkbox"]:checked + .menu-icon:after {
-       content: "✕";
-     }
- 
-    input[type="checkbox"] + .menu-icon:before {
-       content: "☰";
-    }
- 
-    input[type="checkbox"]:checked + .menu-icon:before {
-       display:none;
-    }
-    
-    .main-overlay-div {
-       margin-right: 57.5%;
-       margin-top: -28px;
-    }
- 
-    .icon-txt {
-       display: block;
-       width: 52%;
-       margin-right: 0;
-       padding-right: 0;
-       cursor: pointer;
-       font-size: 2vw;		
-    }
- 
-    .icon-img {
-       margin-right: 0;
-       padding-right: 0;
-       cursor: pointer;
-    }
- 
-    .nav-link:hover .dropdown-content {
-       display: none;
-    }
- 
-    input[type="checkbox"]:checked ~ nav .main-logo {
-       font-weight:900;
-       text-align: center;
-       display: inline-block;
-       padding: 12px;
-       position: relative;
-       margin-top: 1%;
-    }
- 
-    input[type="checkbox"]:checked ~ nav .home-link {
-       height:80%;
-       display: inline-block;
-       position: relative;
-    }
- 
-    .dropdown-content {
-       display: block;
-       color: black;
-       font-weight: bolder;
-       margin-top: 7px;
-       z-index: 2;
-       text-align: center;
-    }
- 
-    .icon-triptych {
-       margin: 0;
-       border-left: none;
-       border-right: none;
-       justify-content: space-evenly;
-    }
- 
- }
- 
- @media (max-width : 600px ){
- 
-    .investigator-grid {
-       display: grid;
-       max-width: inherit;
-       margin: auto;
-       grid-gap: 15px;	
-    }
- 
-    .dropdown-content {
-        display: none;
-    }
- 
-    .menu-items {
-       display: none;
-    }
- 
-    .dropdown {
-       height: 40%;
-    }
- 
-    body {
-       background-size: 290%; 
-    }
-    
-    .triptych {
-       margin: 1%;
-       margin-bottom: 10%;	
-    }
- 
-    .main-overlay-div {
-       margin: 10%;
-       margin-top: 15%;
-       padding: 12px;
-    }
- 
-    .main-overlay-header {
-       margin-top: 20px;
-    }
- 
-    .main-overlay-text {
-       font-size: 3vw;
-    }
- 
- }
- 
+   }
+
+   .menu-items {
+      display: none;
+   }
+
+   .dropdown {
+      height: 40%;
+   }
+
+   body {
+      background-size: 290%; 
+   }
+   
+   .triptych {
+      margin: 1%;
+      margin-bottom: 10%;	
+   }
+
+   .main-overlay-div {
+      margin: 10%;
+      margin-top: 15%;
+      padding: 12px;
+   }
+
+   .main-overlay-header {
+      margin-top: 20px;
+   }
+
+   .main-overlay-text {
+      font-size: 3vw;
+   }
+
+}
