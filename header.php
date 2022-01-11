@@ -21,6 +21,7 @@
 			<?php 
 				wp_nav_menu( array( 
 					'menu' => 'primary',
+					'theme-location' => 'primary',
 					'container' => false,
 					'walker' => new Brass_Nav_Walker()
 				) 
