@@ -1,6 +1,6 @@
 /*
 Theme Name: brass-study-theme
-Version: 1.0
+Version: 1.1
 Tags: Brassstudy
 Author: AM
 */
@@ -13,7 +13,7 @@ body {
    margin-top: -32px;
    font-style: normal;
    font-weight: 500;
-   min-width: 200px;
+   display: inline;
    letter-spacing: 2px;
 }
 
@@ -25,7 +25,7 @@ a {
 header {
    min-height: 100px;
    max-height: 15%;
-   width: 100%;
+   width: 100vw;
    position: sticky;
    top: 0;
    text-align: end;
@@ -43,12 +43,10 @@ header {
    visibility: none;
 }
 
-
-
 nav {
    display: flex;
    min-height: 100px;
-   width: 100%;
+   width: 100vw;
    overflow: visible;
    position: absolute;
    max-height: 15%;
@@ -89,71 +87,6 @@ nav {
     margin-bottom: 25px;
 }
 
-
-.dropdown-menu ul {
-   display: none;
-   position: absolute;
-   margin: auto;
-   margin-top: 7px;
-   padding-top: 6px;
-   padding-bottom: 16px;
-   padding-left: 17px;
-   padding-right: 17px;
-   background-color: #b10000;
-   width: fit-content;
-   z-index: 1;
-}
-
-.dropdown-submenu {
-   display: none;
-   position: absolute;
-   margin: auto;
-   margin-top: 7px;
-   padding-top: 6px;
-   padding-bottom: 16px;
-   padding-left: 17px;
-   padding-right: 17px;
-   background-color: #b10000;
-   width: fit-content;
-   z-index: 1;
-}
-
-.dropdown-menu > li {
-   position: relative;
-   border-bottom: 1px solid rgba(0, 0, 0, 0);
-   padding-bottom: 6px;
-   font-size: 18px;
-   float: left;
-   font-size: 16px;
-   text-align: left;
-   margin-right: 25px;
-   letter-spacing: 2px;
-   font-weight: bold;
-   transition: all 0.3s linear;
-   display: block;
-   margin: auto;
-   padding-right: 14px;
-   padding-top: 2px;
-}
-
-.dropdown-menu > li > a {
-   text-decoration: none;
-   color: black;
-   font-weight: 900;
-   overflow: auto;
-   margin: auto;
-}
-
-.dropdown-menu > li > ul a{
-   padding-top: 2px;
-   text-decoration: none;
-   font-weight: bolder;
-   display: block;
-   width: 65%;
-   color: white;
-   font-weight: 900;
-}
-
 .dropdown {
    position: relative;
    border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -180,7 +113,7 @@ nav {
    margin: auto;
 }
 
-.dropdown-menu {
+.dropdown-submenu {
    display: none;
    position: absolute;
    margin: auto;
@@ -194,7 +127,7 @@ nav {
    z-index: 1;
 }
 
-.dropdown-menu li {
+.dropdown-submenu li {
    padding-top: 8px;
    text-decoration: none;
    font-weight: bolder;
@@ -205,16 +138,6 @@ nav {
    white-space: nowrap;
 }
 
-.dropdown-menu > li > ul li {
-   padding-top: 8px;
-   text-decoration: none;
-   font-weight: bolder;
-   display: block;
-   width: 65%;
-   color: white;
-   font-weight: 900;
-   white-space: nowrap;
-}
 
 .drop-link {
    padding-top: 2px;
@@ -231,31 +154,30 @@ nav {
   transition: all 0.5s linear;
 }
 
-.menu-item:hover .dropdown-menu {
+.dropdown:hover .dropdown-submenu {
    display: block;
    color: white;
    background: #b10000;
+   z-index: 3;
 }
 
 
-.menu-item:hover .drop-link:hover{
+.dropdown:hover .drop-link:hover{
    text-shadow: 0 0 2px white;
 }
 
-.menu-item:hover {
+.dropdown:hover {
    text-shadow: 0 0 .5px black;
 }
 
 .main-content {
    font-family: source-sans-pro;
-   background-repeat: no-repeat;
    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0036_BWH_Buildings_100815_3528.jpg');
    background-size: 200%;
    margin: 0px;
    font-style: normal;
    font-weight: 200;
-   min-width: 200px;
-   top:0;
+   top:28px;
    display: block;
    overflow: auto;
 }
@@ -264,11 +186,12 @@ nav {
    align-self: flex-start;
    color: white;
    margin: 0;
-   padding-top: 8vh;
-   padding-bottom: 6vh;
+   padding-top: 7vh;
+   padding-bottom: 4vh;
    margin-right: 70%;
    display: inline-block;
    background-color: rgba(158, 9, 9, 0.842);
+
 }
 
 .main-overlay-header {
@@ -309,16 +232,23 @@ nav {
 }
 
 .icon-link {
-   display: flex;
+   display: inline-flex;
    background-color: white;
    border: 3px solid black;
    cursor: pointer;
+   justify-content: center;
+}
+
+.icon-link span {
+   display: block;
+   justify-content: center;
 }
 
 .icon-img {
    height: 7vw;
    width: 7vw;
-   margin: 10px;;
+   margin: 7px;
+   padding: 9px;
    display: block;
    border: 3px solid black;
 }
@@ -332,6 +262,8 @@ nav {
    display: flex;
    width: 10vw;
    flex-direction: column;
+   font-weight: 900;
+   padding: 10px;
 }
 
 .footer-banner {
@@ -416,7 +348,8 @@ nav {
    height: 100%;
    border-radius: 5px;
    border: 2px solid black;
-   background: white;   
+   background: white;  
+   padding: 6px; 
 }
 
 .investigator-image {
@@ -430,8 +363,10 @@ nav {
    color: black;
    line-height: normal;
    text-decoration: none;
-   font-size: 21px;
-   font-weight: bolder;
+   font-size: 17px;
+   font-weight: 900;
+   white-space: wrap;
+   padding:5px;
 }
 
 .investigator-sub-info {
@@ -445,7 +380,7 @@ nav {
    text-decoration: none;
    font-size: 14px;
    font-weight: bolder;
-   padding: 15px;
+   padding: 1%;
 }
 
 
@@ -461,6 +396,7 @@ nav {
    grid-template-columns: 1fr;
    grid-gap: 10px;
    margin-top: -70px;
+  
 }
 
 #c1 {
@@ -489,6 +425,7 @@ nav {
    align-content: space-between;
    align-items: center;
    background-color: rgba(255, 255, 255, 0.4);
+   overflow: auto;
 }
 
 .content-page-block-text {
@@ -501,6 +438,7 @@ nav {
     align-items: center;
     width: 70%;
     align-content: center;
+    min-width: 346px;
  }
 
  #content-page-block-text-bio{
@@ -632,19 +570,31 @@ nav {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width : 815px){
+
+   nav {
+      
+   z-index: 1;
+   align-items: flex-end;
+   }
+
 
 
    .icon-link {
       border: 0px solid black;
    }
 
-   .investigator-grid {
-      display: grid;
-      max-width: inherit;
-      margin: auto;
-      grid-gap: 15px;	
-   }
 
    .drop-link:hover {
       color: #ca0202;
@@ -700,7 +650,7 @@ nav {
       padding-top: 0px;
     }
 
-   .dropdown {
+   .dropdown-span {
       min-width: 100vw;
       min-height: 100vh;
       display: flex;
@@ -756,7 +706,7 @@ nav {
       margin: auto;
    }
 
-   input[type="checkbox"]:checked ~ nav .dropdown-menu {
+   input[type="checkbox"]:checked ~ nav .dropdown-submenu {
       /*width: fit-content;*/
       position: relative;
       background-color: rgba(0, 0, 0, 0);
@@ -771,7 +721,7 @@ nav {
    }
 
   
-   .dropdown-menu li {
+   .dropdown-submenu li {
       text-align: center;
       margin: auto 0;
       padding-top: 0;
@@ -803,7 +753,7 @@ nav {
 
  
    input[type="checkbox"]:checked ~ nav {
-      display: flex;
+      display: inline-flex;
       position: absolute;
       width: 100vw;
       background-color: white;
@@ -811,9 +761,14 @@ nav {
       overflow: auto;
       max-height: 100vh;
       align-items: flex-start;
+      justify-content: space-around;
    } 
 
-   input[type="checkbox"]:checked ~ nav .dropdown {
+   input[type="checkbox"]:checked ~ nav .main-logo{
+      visibility: hidden;
+   } 
+
+   input[type="checkbox"]:checked ~ nav .dropdown-span {
       min-width: 100vw;
       min-height: 100vh;
       display: flex;
@@ -857,8 +812,8 @@ nav {
    }
 
    input[type="checkbox"]:checked ~ nav .nav-tag {
-      border-bottom: 1px solid black;
-      color: black;
+      border-bottom: 1px solid darkred;
+      color: darkred;
       font-weight: 900;
       overflow: auto;
       margin: auto;
@@ -882,13 +837,7 @@ nav {
       
     }
 
-   /* input[type="checkbox"]:checked ~ nav .nav-tag:hover {
-      color: #ca0202;
-      text-shadow: 0 0 1px #ca0202;
-      border-bottom: 1px solid #ca0202;
-    } */
 
-   
 
    input[type="checkbox"]:checked + .menu-icon:after {
       content: "✕";
@@ -904,7 +853,6 @@ nav {
    
    .main-overlay-div {
       margin-right: 57.5%;
-      margin-top: -28px;
    }
 
    .icon-txt {
@@ -913,7 +861,8 @@ nav {
       margin-right: 0;
       padding-right: 0;
       cursor: pointer;
-      font-size: 2vw;		
+      font-size: 2vw;
+      text-align: center;		
    }
 
    .icon-img {
@@ -938,7 +887,7 @@ nav {
       position: relative;
    }
 
-   .dropdown-menu {
+   .dropdown-submenu {
       display: block;
       color: black;
       font-weight: bolder;
@@ -958,14 +907,8 @@ nav {
 
 @media (max-width : 600px ){
 
-   .investigator-grid {
-      display: grid;
-      max-width: inherit;
-      margin: auto;
-      grid-gap: 15px;	
-   }
 
-   .dropdown-menu {
+   .dropdown-submenu {
        display: none;
    }
 
@@ -973,7 +916,7 @@ nav {
       display: none;
    }
 
-   .dropdown {
+   .dropdown-span {
       height: 40%;
    }
 
@@ -1001,7 +944,3 @@ nav {
    }
 
 }
-
-
-
-
