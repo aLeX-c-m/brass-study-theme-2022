@@ -1,11 +1,9 @@
 /*
 Theme Name: brass-study-theme
-Version: 1.1
+Version: 1.6
 Tags: Brassstudy
 Author: AM
 */
-
-
 
 body {
    font-family: source-sans-pro !important;
@@ -16,7 +14,7 @@ body {
    letter-spacing: 2px;
 }
 
-a {
+.content-page-container a {
    color: rgb(54, 54, 54);
    white-space: nowrap;
 }
@@ -53,8 +51,7 @@ nav {
    z-index: 1;
    align-items: flex-end;
    border-bottom: 3px solid black;
-   background: rgb(255, 255, 255);
-   
+   background: rgb(255, 255, 255);  
 }
 
 .main-logo {
@@ -138,20 +135,23 @@ nav {
 }
 
 
-.drop-link {
+
+.drop-link > a {
+   color: unset;
    padding-top: 2px;
    text-decoration: none;
    font-weight: bolder;
    display: block;
    width: 65%;
-   color: white;
    font-weight: 900;
+
 }
 
 .dropdown-menu:hover .dropdown {
   border-bottom: 1px solid black;
   transition: all 0.5s linear;
 }
+
 
 .dropdown:hover .dropdown-submenu {
    display: block;
@@ -169,6 +169,8 @@ nav {
    text-shadow: 0 0 .5px black;
 }
 
+/* main page main image / text overlay section */
+
 .main-content {
    font-family: source-sans-pro;
    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0036_BWH_Buildings_100815_3528.jpg');
@@ -176,7 +178,7 @@ nav {
    margin: 0px;
    font-style: normal;
    font-weight: 200;
-   top:28px;
+   margin-top: 100px;
    display: block;
    overflow: auto;
 }
@@ -185,7 +187,7 @@ nav {
    align-self: flex-start;
    color: white;
    margin: 0;
-   padding-top: 7vh;
+   padding-top: 10vh;
    padding-bottom: 4vh;
    margin-right: 70%;
    display: inline-block;
@@ -216,6 +218,8 @@ nav {
    justify-content: space-around;	
    margin: 0;
 }
+
+/* icon banner main page */
 
 .icon-triptych {
    align-content: center;
@@ -264,6 +268,8 @@ nav {
    font-weight: 900;
    padding: 10px;
 }
+
+/* footer contents */
 
 .footer-banner {
    background-color:#970303;
@@ -324,6 +330,7 @@ nav {
    background-color: #970303;
 }
 
+/* investigator staff page */
 
 .investigator-grid {
    display: grid;
@@ -382,7 +389,6 @@ nav {
    padding: 1%;
 }
 
-
 .content-page-container {
    width: 100vw;
    height: 80%;
@@ -398,20 +404,20 @@ nav {
   
 }
 
-#c1 {
+#img1 {
   background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0019_BWH_Buildings_100615_1734.jpg');
 }
 
 
-#c2 {
+#img2 {
    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0007_BWH_Buildings_100615_0566.jpg');
 }
 
-#c3 {
+#img3 {
    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0092_BWH_120715_20753_crop.jpg');  
 }
 
-#c4 {
+#img4 {
    background-image: url('https://www.brassstudy.org/wp-content/uploads/2022/01/0020_BWH_Buildings_100615_1764.jpg');   
 }
 
@@ -440,7 +446,7 @@ nav {
     min-width: 346px;
  }
 
- #content-page-block-text-bio{
+ #content-page-block-text-bio {
    background: white;
    padding: 5%;
    margin: auto;
@@ -476,10 +482,8 @@ nav {
     border-bottom: 2px solid black;
     margin: auto;
     margin-bottom: 30px;
-    width: 70%;
-   
+    width: 70%; 
  }
-
 
  .content-page-block-text p {
   font-family: source-sans-pro !important;
@@ -569,44 +573,20 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width : 815px){
 
-   nav {
-      
+   nav {    
    z-index: 1;
    align-items: flex-end;
    }
-
-
 
    .icon-link {
       border: 0px solid black;
    }
 
-
-   .drop-link:hover {
-      color: #ca0202;
-   }
-
-   .dropdown-menu:hover .dropdown {
-      border-bottom: 0;
-    }
-
    .checkbox {
       visibility: visible;
       background-color: rgba(255, 255, 255, 0);
-      cursor: default;
       appearance: auto;
       box-sizing: border-box;
       padding: initial;
@@ -719,22 +699,17 @@ nav {
       padding: 0px;
    }
 
-  
-   .dropdown-submenu li {
-      text-align: center;
-      margin: auto 0;
-      padding-top: 0;
-      text-decoration: none;
-      font-weight: bolder;
-      display: block;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      width: 100%;
+
+   .drop-link a:hover {
+      color: darkred;
    }
 
-   .drop-link {
+   .dropdown-menu:hover .dropdown {
+      border-bottom: 0;
+    }
+  
+    .drop-link a {
+       color: black;
       padding-top: 10px;
       text-decoration: none;
       font-weight: bolder;
@@ -746,6 +721,7 @@ nav {
       margin: 0;
       text-align: center;
       max-width: unset;
+      cursor: pointer;
    }
 
   
@@ -835,8 +811,6 @@ nav {
       text-shadow: 0 0 1px #ca0202;
       
     }
-
-
 
    input[type="checkbox"]:checked + .menu-icon:after {
       content: "✕";

@@ -1,6 +1,7 @@
 <?php
-    get_header(); 
+get_header(); 
 ?>  
+
 <div class="content-page-container" id="c1">
 	<div class="content-page-block">
 		<div class="content-page-block-text">
@@ -20,5 +21,5 @@
 </div>
 
 <?php
-    get_footer(); 
+get_footer(); 
 ?>  
